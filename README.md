@@ -1,6 +1,6 @@
 #  DefenderDropper
 
-**Advanced DLL Hijacking Payload Generator Using Windows Defender Vulnerabilities**
+**Advanced DLL Hijacking Payload Generator Using Windows Defender Vulnerabilities** 
 
 ![Banner](assets/banner.jpg)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=round)](https://github.com/HackScaleTeam/DefenderDropper/issues)
