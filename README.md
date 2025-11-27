@@ -154,6 +154,12 @@ TwoSevenOneT for the original DefenderWrite research
 
 The cybersecurity community for continuous improvement
 
+### ❤️Supporters❤️
+[![Stargazers repo roster for @HackScaleTeam/DefenderDropper](http://reporoster.com/stars/dark/HackScaleTeam/DefenderDropper)](https://github.com/HackScaleTeam/DefenderDropper/stargazers)
+
+[![Forkers repo roster for @HackScaleTeam/Dominion](http://reporoster.com/forks/dark/HackScaleTeam/DefenderDropper)](https://github.com/HackScaleTeam/DefenderDropper/network/members)
+
+
 # License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/HackScaleTeam/DefenderDropper/blob/main/LICENSE). file for details.
 
